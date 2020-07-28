@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "application.scss", :rel => "stylesheet"}/
+  %body
+    .SideBer
+      .SideBer__UserName
+        .TopItems
+          .TopItems__Name masa
+          %ul.TopItems__Icons
+            %li.TopItems__Icon
+            = link_to "#" do
+              %i.fas.fa-edit
+            %li.TopItems__Icon2
+            = link_to "#" do
+              %i.fas.fa-cog
+      .SideBer__GroupList
+        .Group__Names
+          .Group__Name techcamp
+        .Group__Messages
+          .Group__Message まだメッセージがありません
+        .Group__Names
+          .Group__Name techcamp
+        .Group__Messages
+          .Group__Message まだメッセージがありません
+
+

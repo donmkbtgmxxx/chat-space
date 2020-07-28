@@ -1,0 +1,48 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %link{:href => "application.scss", :rel => "stylesheet"}/
+  %body
+    .MainChat
+      .MainChat__GroupInfo
+        .MainChat__GroupNames 
+          .MainChat__GroupName pppp
+          %ul.MainChat__GroupMemberList 
+            Member :
+            %li.MainChat__GroupMember 
+              masa
+        .MainChat__Edit
+          %a.edit{:href => "#"}Edit
+
+      .MainChat__MessageList 
+        .MessageBox
+          .MessageInfo
+            .MessageInfo__Username
+              masa
+            .MessageInfo__Nitiji
+              2020年07月26日　17時09分
+          .Message
+            .Message__Content
+              コメント
+        .MessageBox
+          .MessageInfo
+            .MessageInfo__Username
+              masa
+            .MessageInfo__Nitiji
+              2020年07月26日　23時24分
+          .Message
+            .Message__Content
+              コード書くの難しい
+
+      .MainChat__MessageForm 
+        %form.Form__Contents
+          .Form__Content
+            %input.Form__Content--in{:placeholder => "type a message", :type => "text"}/
+            %label.Form__inputImage{:for => "message_image"}
+              %i.far.fa-image.Form__icon
+                %input#message_image.Hidden{:name => "message[image]", :type => "file"}/
+          %input.Form__submit{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+
+
+
