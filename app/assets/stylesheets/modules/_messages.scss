@@ -1,0 +1,170 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, header {
+  height: 100%;
+  }
+
+.wrapper{
+  display: flex;
+  height: 100%;
+}
+
+
+.SideBer{
+  width: 300px;
+  color: #ffffff;
+  &__UserName{
+     background-color: #253141;
+     height: 100px;
+     display: flex;
+     align-items: center;
+     padding: 0 20px;
+   }
+    .TopItems{
+      height: 20px;
+      width: 260px;
+      display: flex;
+      justify-content: space-between;
+    &__Name{
+      font-size: 16px;
+    }
+    &__Icons{
+      width: 60px;
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+      color: #ffffff;
+    }
+    &__Icon2{
+      margin-left: 5px;
+    }
+    .fa-edit,.fa-cog{
+      color: #ffffff;
+    }
+  }
+    &__GroupList{
+      background-color: #2f3e51;
+      height: calc(100% - 100px);
+      padding: 0 20px;
+    .Group__Names{
+      color: #ffffff;
+      font-size: 15px;
+      width: 260px;
+      padding-top: 20px;
+    }
+    .Group__Messages{
+      color: #ffffff;
+      font-size: 11px;
+      padding: 5px 0 40px 0;
+    }
+    .Group__Message{
+      color: #ffffff;
+    }
+  }
+}
+
+.MainChat{
+  width: calc(100vw - 300px);
+  &__GroupInfo{
+    background-color: #ffffff;
+    height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+  }
+    &__GroupName{
+      margin-top: 35px;
+      font-size: 20px;
+      color: #333333;
+    }
+      &__GroupMemberList{
+        font-size: 12px;
+        color: #999999;
+        display: flex;
+        margin-top: 15px;
+        }
+        &__GroupMember{
+          font-size: 12px;
+          color: #999999;
+          list-style: none;
+        }
+    &__Edit{
+      border: 1px solid #38AEF0;
+      height: 40px;
+      padding: 0 20px;
+      margin-top: 28px;
+      display: block;
+      text-decoration: none;
+      line-height: 40px;
+      color: #38AEF0;
+    }
+  &__MessageList{
+    background-color: #fefefe;
+    height: calc(100% - 190px);
+    padding: 35px 40px;
+  }
+    .MessageBox{
+      margin-bottom: 46px;
+    }
+      .MessageInfo{
+        display: flex;
+        &__Username{
+          color: #333333;
+          font-size: 16px;
+        }
+        &__Nitiji{
+          color: #999999;
+          font-size: 12px;
+          padding-left: 10px;
+        }
+      }
+      .Message{
+      margin-top: 12px;
+      color: #434A54;
+      font-size: 14px;
+      }
+  .MainChat__MessageForm{
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 20px 50px 20px 40px;
+      .Form__Contents{
+        display: flex;
+        justify-content: space-between;
+      .Form__Content{
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+          &--in{
+          border: none;
+          height: 50px;
+          width: 100%;
+          padding-left: 10px;
+        }
+      }
+        .Form__inputImage{
+          height: 50px;
+         position: absolute;
+          right: 10px;
+        }
+          .far.fa-image.Form__icon{
+            line-height: 50px;
+          }
+            .Hidden{
+              display: none;
+            }
+      .Form__submit{
+        background-color: #38AEF0;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0 30px;
+      }
+    }
+  }
+}
