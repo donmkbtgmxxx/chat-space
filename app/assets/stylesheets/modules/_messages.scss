@@ -55,10 +55,18 @@ html, body, header {
       width: 260px;
       padding-top: 20px;
     }
+    .Group__Names a{
+      text-decoration: none;
+    }
+    .Group__Name{
+      text-decoration: none;
+      color: #ffffff;
+    }
     .Group__Messages{
       color: #ffffff;
       font-size: 11px;
       padding: 5px 0 40px 0;
+      text-decoration: none;
     }
     .Group__Message{
       color: #ffffff;

@@ -5,19 +5,16 @@
         = current_user.name
       %ul.TopItems__Icons
         %li.TopItems__Icon
-        = link_to "#" do
+        = link_to "/groups/new" do
           %i.fas.fa-edit
         %li.TopItems__Icon2
         = link_to edit_user_path(current_user) do
           %i.fas.fa-cog
   .SideBer__GroupList
-    .Group__Names
-      .Group__Name techcamp
-    .Group__Messages
-      .Group__Message まだメッセージがありません
-    .Group__Names
-      .Group__Name techcamp
-      .Group__Messages
-        .Group__Message まだメッセージがありません
-
-
+    - current_user.groups.each do |group|
+      .Group__Names
+        = link_to '#' do
+          .Group__Name
+            = group.name
+          .Group__Messages
+            .Group__Message まだメッセージがありません

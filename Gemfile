@@ -47,6 +47,8 @@ gem 'devise'
 gem 'devise-i18n'
 gem 'devise-i18n-views'
 
+gem 'pry-rails'
+
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
