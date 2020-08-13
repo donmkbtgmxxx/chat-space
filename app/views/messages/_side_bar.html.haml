@@ -13,8 +13,9 @@
   .SideBer__GroupList
     - current_user.groups.each do |group|
       .Group__Names
-        = link_to '#' do
+        = link_to group_messages_path(group) do
           .Group__Name
             = group.name
           .Group__Messages
-            .Group__Message まだメッセージがありません
+            .Group__Message  
+              = group.show_last_message
