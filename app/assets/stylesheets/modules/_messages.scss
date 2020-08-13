@@ -120,16 +120,16 @@ html, body, header {
     }
       .MessageInfo{
         display: flex;
-        &__Username{
+      }
+        .MessageInfo__Username{
           color: #333333;
           font-size: 16px;
         }
-        &__Nitiji{
+        .MessageInfo__date{
           color: #999999;
           font-size: 12px;
           padding-left: 10px;
         }
-      }
       .Message{
       margin-top: 12px;
       color: #434A54;
@@ -142,21 +142,23 @@ html, body, header {
       .Form__Contents{
         display: flex;
         justify-content: space-between;
+      }
       .Form__Content{
         width: 100%;
         background-color: #fff;
         position: relative;
-          &--in{
+      }
+        .Form__Content--in{
           border: none;
           height: 50px;
           width: 100%;
-          padding-left: 10px;
+          padding: 0 45px 0 15px;
         }
-      }
         .Form__inputImage{
           height: 50px;
-         position: absolute;
+          position: absolute;
           right: 10px;
+          line-height: 50px ; 
         }
           .far.fa-image.Form__icon{
             line-height: 50px;
@@ -175,4 +177,3 @@ html, body, header {
       }
     }
   }
-}
