@@ -31,6 +31,17 @@ gem 'bootsnap', '>= 1.4.2', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'pry-rails'
+  gem 'rspec-rails', '~> 4.0.0.beta2'
+  gem 'rails-controller-testing'
+  gem 'factory_bot_rails'
+  gem 'faker'
+
+  # RSpecを利用するためのrspec-rails
+  # そして簡単にダミーのインスタンスを作成することができるfactory_bot_rails
+  # ダミーデータを作成するためのfaker
+  # コントローラのテストに必要なrails-controller-testingの4つのGemをインストール
+  # これらは４つは、テストで使うgemである。
 end
 
 group :development do
@@ -64,3 +75,5 @@ gem 'font-awesome-sass'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'jquery-rails'
