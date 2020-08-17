@@ -64,8 +64,6 @@ RSpec.configure do |config|
 
   config.include FactoryBot::Syntax::Methods
 
-  # deviseのコントローラのテスト用のモジュールと、先ほど定義したControllerMacrosを読み込む記述を行う
-  # 参考URL https://master.tech-camp.in/curriculums/4343
   Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include ControllerMacros, type: :controller
